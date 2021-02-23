@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哔哩哔哩弹幕网 (゜-゜)つロ 干杯~-bilibili</title>
+    <link rel="icon" href="images主界面/favicon.ico" type="image/x-icon">
+</head>
+
+<script>
+    function login() {
+        alert("登录成功！");
+    }
+</script>
+
+<style>
+    a {
+        text-decoration: none
+    }
+    
+    a:hover {
+        text-decoration: none
+    }
+    
+    #title {
+        color: white;
+        font-size: 14.5px;
+    }
+    
+    #word {
+        text-align: center;
+    }
+    
+    #smallleft {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #all {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    
+    #right {
+        position: relative;
+        top: 60px;
+    }
+</style>
+
+<body>
+    <div id=title>
+        <a style="color: black;" href="https://www.bilibili.com/" target="_blank"><img src="images注册\passport.bilibili.com_login.png"></a>
+        <a style="color: black;" href="bilibili.html" target="_blank">主站</a>
+        <a style="color: black;" href="https://www.bilibili.com/anime/?spm_id_from=333.130.b_696e7465726e6174696f6e616c486561646572.2" target="_blank">番剧</a>
+        <a style="color: black;" href="https://game.bilibili.com/platform/?spm_id_from=333.130.b_696e7465726e6174696f6e616c486561646572.3" target="_blank">游戏中心</a>
+        <a style="color: black;" href="https://live.bilibili.com/?spm_id_from=333.130.b_696e7465726e6174696f6e616c486561646572.4" target="_blank">直播</a>
+        <a style="color: black;" href="https://show.bilibili.com/platform/home.html?msource=pc_web&spm_id_from=333.130.b_696e7465726e6174696f6e616c486561646572.5" target="_blank">会员购</a>
+        <a style="color: black;" href="https://www.bilibili.com/v/game/match/?spm_id_from=333.130.b_696e7465726e6174696f6e616c486561646572.7" target="_blank">漫画</a>
+        <a style="color: black;" href="https://www.bilibili.com/v/game/match/?spm_id_from=333.130.b_696e7465726e6174696f6e616c486561646572.7" target="_blank">赛事</a>
+        <a style="color: black;" href="https://app.bilibili.com/?spm_id_from=333.130.b_696e7465726e6174696f6e616c486561646572.8" target="_blank"><img src="images注册\passport.bilibili.com_login (2).png">下载APP</a>
+    </div>
+
+    <div>
+        <img style="width: 100%;height: 100px ;" src="images注册\rl_top.35edfde.png">
+    </div>
+
+
+    <div id=word>
+        <span style="font-size: 38px;">登录</span>
+    </div>
+
+    <div id=all>
+        <div>
+            <!-- 左边 -->
+            <div id=leftimg style="display: flex; text-align: center" ;>
+                <img src="images注册\passport.bilibili.com_login (1).png" style="margin: 0 auto;" />
+            </div>
+            <div id=smallleft>
+                <div id=left22>
+                    <img src="images注册\22.png">
+                </div>
+
+                <div id=left1 style="text-align: center;line-height: 1px;">
+
+                    <p>扫描二维码登录</p>
+                    <br>
+                    <p>请使用
+                        <a style="color: dodgerblue;" href="https://app.bilibili.com/" target="_blank">哔哩哔哩客户端</a>
+                    </p>
+                    <br>
+                    <p>扫码登陆</p>
+                    <br>
+                    <p>或扫码下载APP</p>
+                </div>
+
+                <div>
+                    <img src="images注册\33.png">
+                </div>
+            </div>
+
+        </div>
+
+        <div id=right style="display: flex;flex-direction: column;">
+            <!-- 右边 -->
+            <div id=kuang style="display: flex;flex-direction: column;">
+                <from method="post" action="save.php" id=ID>
+                    <input type="text" value placeholder="你的用户名/邮箱" name="ID" style="width: 350px;height: 35px;">
+                    <br>
+                    <br>
+                    <br>
+                    <input type="text" value placeholder="密码" name="password" style="width: 350px;height: 35px;">
+                </from>
+                <br>
+                <br>
+            </div>
+
+            <div id=remenberme style="display: flex;">
+                <button> </button>
+                <span style="font-size: 2.8px;">记住我</span>
+                <span style="color: dimgray;font-size: 2.8px;">不是自己的电脑上不要勾选此选项</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="color: dodgerblue;font-size: 2.8px;" href="https://www.bilibili.com/blackboard/help.html#/?qid=01c16d22f6bb44fd976e8874142b60b6" target="_blank">无法验证？</a>
+                <a style="color: dodgerblue;font-size: 2.8px;" href="https://passport.bilibili.com/register/findpassword.html#/verify?gourl=https%3A%2F%2Fwww.bilibili.com%2F" target="_blank">忘记密码？</a>
+                <br>
+            </div>
+
+            <div id=loginbutton style="display: flex;">
+                <button onclick="login()" ； style="border-style: none;color: white;background-color: dodgerblue;width: 160px;height: 40px;">登录</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <form method="GET" action="https://passport.bilibili.com/register/phone.html#/phone">
+                    <button style="border-style: none;width: 160px;height: 40px;">注册</button>
+                </form>
+                <br>
+                <br>
+            </div>
+
+            <div id=otherway style="font-size: 3px;display: flex;">
+                <a style="color: grey;" href="https://api.weibo.com/oauth2/authorize?client_id=2841902482&redirect_uri=https%3A%2F%2Fpassport.bilibili.com%2Flogin%2Fsnsback%3Fsns%3Dweibo%26state%3Dda458740700111eb965a5a697835405e&scope=email###" target="_blank"><img src="images注册\weibo.png">微博账号登录</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="color: grey;" href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&state=authorize&client_id=101135748&redirect_uri=https%3A%2F%2Fpassport.bilibili.com%2Flogin%2Fsnsback%3Fsns%3Dqq%26%26state%3Dda458740700111eb965a5a697835405e&scope=do_like,get_user_info,get_simple_userinfo,get_vip_info,get_vip_rich_info,add_one_blog,list_album,upload_pic,add_album,list_photo,get_info,add_t,del_t,add_pic_t,get_repost_list,get_other_info,get_fanslist,get_idollist,add_idol,del_idol,get_tenpay_addr"
+                    target="_blank"><img src="images注册\QQ.png">QQ账号登录</a>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

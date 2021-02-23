@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</title>
+    <link rel="icon" href="images主界面/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <style>
+        a {
+            text-decoration: none
+        }
+        
+        a:hover {
+            text-decoration: none
+        }
+        
+        #allti {
+            background-image: url(images主界面/b3fc5599fdf11f327cf842241a591405f3f88f58.png);
+            background-size: cover;
+            width: 100%;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            position: absolute top 80px;
+        }
+        
+        #ti {
+            color: white;
+            size: 8px;
+        }
+        
+        #search1 {
+            height: 50px;
+            width: 50px;
+        }
+        
+        #button1 {
+            width: 40px;
+            height: 30px;
+            background-image: url(images主界面\1@H`_{KXVR31$IH]KER4DDU.png);
+            background-size: 40px 30px;
+        }
+        
+        #login {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: none;
+            background-color: white;
+            color: royalblue;
+        }
+        
+        #child {
+            display: inline-block;
+        }
+    </style>
+    <!-- 标题 -->
+    <div id=allti style="width: 100%;height: 128px;display: flex;">
+        <!-- 标题长栏 -->
+        <div id=ti style="display: flex;">
+            <img src="images主界面/favicon.ico" height="1.4%" width="1.4%">
+            <a style="color: white;" href="https://www.bilibili.com/" target="_blank">主站 </a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a style="color: white;" href="https://www.bilibili.com/anime/?spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.2" target="_blank">漫画</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a style="color: white;" href="https://www.bilibili.com/" target="_blank">赛事</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a style="color: white;" href="https://game.bilibili.com/platform/?spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.3" target="_blank">游戏中心</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a style="color: white;" href="https://live.bilibili.com/?spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.4" target="_blank">直播</a>&nbsp;&nbsp;
+            <div id=search style="position:relative left 200px" ;>
+                <div>
+                    <!-- 搜索框 -->
+                    <div style="display: inline-block; width: 350px;height: 50px;">
+                        <from method="post" action="save.php" id=search1>
+                            <input type="text" name="搜索" style="width: 350px;height: 30px;display: inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;
+                        </from>
+                    </div>
+                    <div style="display: inline-block;height: 50px;width: 40;position: relative;top: 0px;left: 0px;">
+                        <button id=button1 style="border: 0ch;"><!-- 搜索按钮 --></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+            </div>
+            <!-- 登录按钮 -->
+            <div id=login style="display: flex;">
+                <form method="GET" action="bilibili注册.html" target="_blank">
+                    <button login id=login>登录</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </form>
+
+            </div>
+            <a style="color: white;" href="https://account.bilibili.com/account/big" target="_blank">大会员</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a style="color: white;" href="https://passport.bilibili.com/login" target="_blank">消息</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a style="color: white;" href="https://t.bilibili.com/" target="_blank">动态</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a style="color: white;" href="https://passport.bilibili.com/login?gourl=https://space.bilibili.com" target="_blank">收藏</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a style="color: white;" href="https://www.bilibili.com/" target="_blank">历史记录</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a style="color: white;" href="https://member.bilibili.com/platform/home?spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.10" target="_blank">创作中心</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+
+        <div id=button2>
+            <button style="background-color: hotpink;color: white;width: 100px;height: 40px;">投稿</button>
+        </div>
+    </div>
+
+    <!-- 第二栏 -->
+    <div style="display: flex;justify-content: center;">
+        <!-- 第二栏左边 -->
+        <div style="display: flex;flex-direction: row;justify-content: space-between;width: 200px;height: 68px;position: relative;top: 35px;">
+            <a style="display: flex;flex-direction: column;color: black;" href="https://www.bilibili.com/" target="_blank"><img style="border-radius: 50%;" src="images主界面\www.bilibili.com_主页.png">首页</a>
+            <a style="display: flex;flex-direction: column;color: black;" href="https://t.bilibili.com/?spm_id_from=333.851.b_7072696d61727950616765546162.2" target="_blank"><img style="border-radius: 50%;" src="images主界面\www.bilibili.com_动态.png">动态</a>
+            <a style="display: flex;flex-direction: column;color: black;" href="https://www.bilibili.com/v/popular/all?spm_id_from=333.851.b_7072696d61727950616765546162.3" target="_blank"><img style="border-radius: 50%;" src="images主界面\www.bilibili.com_热门.png">热门</a>
+            <a style="display: flex;flex-direction: column;color: black;" href="https://www.bilibili.com/v/channel?spm_id_from=333.851.b_7072696d61727950616765546162.4" target="_blank"><img style="border-radius: 50%;" src="images主界面\www.bilibili.com_频道.png">频道</a>
+        </div>
+
+
+        <!-- 第二栏中间 -->
+        <div style="display: inline-block;position: relative;top: 35px;left: 30px;">
+            <a style="color: black;" href="https://www.bilibili.com/v/douga/?spm_id_from=333.851.b_7072696d6172794368616e6e656c4d656e75.1" target="_blank">动画<img src="images主界面\www.bilibili.com_999+.png"></a>
+            <a style="color: black;" href="https://www.bilibili.com/v/music/" target="_blank">音乐<img src="images主界面\www.bilibili.com_999+.png"></a>
+            <a style="color: black;" href="https://www.bilibili.com/v/dance/" target="_blank">舞蹈<img src="images主界面\www.bilibili.com_999+.png"></a>
+            <a style="color: black;" href="https://www.bilibili.com/v/technology/" target="_blank">知识<img src="images主界面\www.bilibili.com_999+.png"></a>
+            <a style="color: black;" href="https://www.bilibili.com/v/life/" target="_blank">生活<img src="images主界面\www.bilibili.com_999+.png"></a>
+            <a style="color: black;" href="https://www.bilibili.com/v/fashion/" target="_blank">时尚<img src="images主界面\www.bilibili.com_999+.png"></a>
+            <a style="color: black;" href="https://www.bilibili.com/v/ent/" target="_blank">娱乐<img src="images主界面\www.bilibili.com_999+.png"></a>
+            <a style="color: black;" href="https://www.bilibili.com/cinema/" target="_blank">放映厅<img src="images主界面\www.bilibili.com_999+.png"></a>
+            <br>
+            <a style="color: black;" href="https://www.bilibili.com/anime/" target="_blank">番剧<img src="images主界面\www.bilibili.com_999+.png"></a>
+            <a style="color: black;" href="https://www.bilibili.com/guochuang/" target="_blank">国创<img src="images主界面\www.bilibili.com_999+.png"></a>
+            <a style="color: black;" href="https://www.bilibili.com/v/game/" target="_blank">游戏<img src="images主界面\www.bilibili.com_999+.png"></a>
+            <a style="color: black;" href="https://www.bilibili.com/v/digital/" target="_blank">数码<img src="images主界面\www.bilibili.com_999+.png"></a>
+            <a style="color: black;" href="https://www.bilibili.com/v/kichiku/" target="_blank">鬼畜<img src="images主界面\www.bilibili.com_999+.png"></a>
+            <a style="color: black;" href="https://www.bilibili.com/v/information/" target="_blank">资讯<img src="images主界面\www.bilibili.com_999+.png"></a>
+            <a style="color: black;" href="https://www.bilibili.com/v/cinephile/" target="_blank">影视<img src="images主界面\www.bilibili.com_999+.png"></a>
+            <span>更多</span>
+        </div>
+
+        <!-- 第二栏右边 -->
+        <div style="display: inline-block;position: relative;top: 35px;left: 60px;">
+            <a style="color: black;" href="https://www.bilibili.com/read/home?spm_id_from=333.851.b_7072696d617279467269656e64736869704c696e6b.1" target="_blank"><img src="images主界面\专栏.png">专栏</a>
+            <a style="color: black;" href="https://www.bilibili.com/blackboard/x/act_list" target="_blank"><img src="images主界面\活动.png">活动</a>
+            <a style="color: black;" href="https://www.bilibili.com/blackroom/" target="_blank"><img src="images主界面\小黑屋.png">小黑屋</a><br>
+            <a style="color: black;" href="https://live.bilibili.com/" target="_blank"><img src="images主界面\直播.png">直播</a>
+            <a style="color: black;" href="https://www.bilibili.com/cheese/" target="_blank"><img src="images主界面\课堂.png">课堂</a>
+            <a style="color: black;" href="https://www.bilibili.com/v/musicplus/" target="_blank"><img src="images主界面\音乐PLUS.png">音乐PLUS</a>
+        </div>
+    </div>
+
+    <!-- 第三栏 导视-->
+    <div style="display: inline-block;">
+        <div style="position: relative;top: 50px;left: 30%;">
+            <img src="images主界面\第三栏左导视图.png">
+        </div>
+    </div>
+
+
+    <!-- 第四栏 推广-->
+    <div style="display: inline-block;">
+        <div style="display: inline-block;position: absolute;top: 510px;left: 12%;">
+            <img src="images主界面\推广.png">
+            <span style="font-size: 20px;">推广</span>&nbsp;&nbsp;&nbsp;
+            <a style="color: gray;font-size: 2px;" href="https://www.bilibili.com/read/cv9236674" target="_blank"><img src="images主界面\火.png">返工红包等你拿！</a>
+        </div>
+
+        <div style="position: absolute;top: 530px;right: 13%;">
+            <a href="https://www.bilibili.com/read/cv9527924" target="_blank"><img style="width: 265px;height: 152px;" src="images主界面\海明威.jpg"></a>
+        </div>
+    </div>
+    <!-- 第五栏广告 -->
+    <div style="display: inline-block;position: relative;top: 300px;display: flex;justify-content: center;">
+        <a href="https://cm.bilibili.com/cm/api/fees/pc/sync/v2?msg=a%7C41%2Cb%7Cbilibili%2Cc%7C1%2Cd%7C1%2Ce%7CCJjMKxDEjowBGP%2FI0ykgpwUoATCwGjgpQiExNjEzODg0MzkzMTk0cTE3MmEyNWExNjNhMTAxcTY4NDlI6o2GmPwuUgnmlIDmnp3oirFaBuWbm%2BW3nWIG5Lit5Zu9aAFwAXiAgICAkA2AAQOIAQCSAQsyMjMuODcuNjkuOJoBAKABwAaoASayASBHoZ5pPSTfaDO4af%2FBCm3h171tDWg6Vfk08Zg35mLftroBrwJodHRwczovL216LnRhbnpob3VlZHUuY29tLz9zPTBmN2NjMGIxMGY5ZWRjYmUmdHJhY2tfaWQ9cHg3OENwMkRscVpiQlRNSFN2amxJRW5xZnFBTVhqdng1UjNOWjk4ell3aTBIUjkyNE0zdTFmVkhlOC0tMVJNYTBOaUNXVi0wQ2FnSEtzUkprVi1ES3hmQW9mUlFHSTEyY1RGZjNkbVd6WjVScmtpQ1lidjFQTnJoVlR5MkE0QTZJME5Hc3hSbW5aZzNGcnpBRnU0RmNsX1h0VGRNdUoxZTNUTGk0cE1FVVN0V1F0UnFIYVdoSmlIeDZtN2ZzRHlLJmNyaWQ9ODczNTI0NDcmaWRmYT1fX0lERkFfXyZpbWVpPV9fSU1FSV9fJm9haWQ9X19PQUlEX1%2FCAQMzOTTSAQDYAWngAeSt4gToAeSt4gTwAQD4AacFgAICiAIAkgL7AjI0OTA0MDhfMTYxMzgxMDg5NSwxNjExMjg5XzE2MTM4MTEyMjAsMjUzNjg5MV8xNjEzODExNDMzLDE2MTEyODlfMTYxMzgxMjM3MSwyNjYwMDYxXzE2MTM4MTg3MjUsMjMxMDc0OV8xNjEzODIxODM3LDI2MDg5NzBfMTYxMzgyMTgzNywyMzkxMDc1XzE2MTM4MjE4MzcsMjU0NjQ0Ml8xNjEzODIxODM3LDIzODM2MzZfMTYxMzgyMTgzNywyNTQ5MjgyXzE2MTM4MjE4MzcsMjc4NDI4M18xNjEzODIxODM3LDI0MjcyMTdfMTYxMzgyMTgzNywyNzgwNjQ4XzE2MTM4MjE4MzcsMjYxNzY3N18xNjEzODIxODM3LDI3OTg5MzRfMTYxMzgyMTg0MCwyNTExNDY2XzE2MTM4MjE4NDAsMjMxMDQ1NF8xNjEzODIxODQwLDI3MTIwMDFfMTYxMzgyMTg0MCwyNDkwNDA4XzE2MTM4MjE4NDCYAv%2FX2AKgAqiSAagCkqgBsAJZuAIAwAKck%2BvcA8gCwQbqAgD4AqkEiAMBkgMAqAMAsAMAuAMAyAMW0gM5eyIxIjoiODczNTI0NDciLCIyIjoiMzM3NiIsIjQiOiIzOCIsIjUiOiI0NyIsIjYiOiIzXzU1MyJ94AMC6AMC8AMA%2BgMFb3RoZXKCBAludWxsOm51bGyIBMAGkAQAoAQaqgQECHcQBKoEBgi4mn0QAQ%3D%3D%2Cf%7Cclick_sync_3%2Cg%7C1%2Ch%7C1%2Ci%7C500658499%2Cj%7C%2Ck%7C1613884394089%2Cl%7C%2Cm%7C1613884393698%2Cn%7C1%2Co%7C&ts=1613884394089"
+            target="_blank"><img style="height: 83px;width: 999px;" src="images主界面\柴犬广告.jpeg"></a>
+    </div>
+
+    <!-- 第六栏 直播 -->
+    <div style="display: flex;position: relative;top: 340px;left: 12%;height: 360px;">
+        <a style="color: black;font-size: 20px;" href="https://live.bilibili.com/" target="_blank"><img src="images主界面\直播2.png">正在直播</a>
+
+
+    </div>
+
+    <!-- 第七栏 动画 -->
+    <div style="display: flex;display: inline-block;position:relative;top: 400px;left: 12%;">
+        <a style="color: black;font-size: 20px;" href="https://www.bilibili.com/v/douga" target="_blank"><img src="images主界面\动画.png">动画</a>
+    </div>
+
+    <!-- 第八栏 广告2 -->
+    <div style="display: flex;justify-content: center;position: relative;top: 700px;">
+        <a href="https://cm.bilibili.com/cm/api/fees/pc/sync/v2?msg=a%7C43%2Cb%7Cbilibili%2Cc%7C1%2Cd%7C1%2Ce%7CCNWPKxCA34wBGNO82ikg1wQoATCagRY4K0IgMTYxMzkwNTcyNTY4M3ExNzJhMjVhMTYxYTUzcTI5OTRI85GcovwuUgnmlIDmnp3oirFaBuWbm%2BW3nWIG5Lit5Zu9aAFwAXiAgICAkA2AAQOIAQCSAQsyMjMuODcuNjkuOJoBAKAB3ASoASCyASCA5ybZjox5xfmobvh5MjPDnJ6qj3ibN%2FAKNKhZMFKK1roBjQJodHRwOi8vc2QuemNlZHVzdHVkeS5jb20veWcvYmlsaWJpbGkvODA5My9wYy9xZy8wMS00Ny9pbmRleC5odG1sIzAyP3RyYWNrX2lkPXB4NzhDcDJEbHFaYkJUTUhTdmpsSUVucWZxQU1YanZ4NVIzTlo5OHpZd2kwSFI5MjRNM3UxZlZIZTgtLTFSTWFqNXdIcXhFX0NPOTZLVWdRVmVpLVdJUTc1Ml9BOFF1WFBERjBXWERCeHYzQUlxc1I5ak1iaG9jT0RDZG1ZREk2Z1JTNnk3S1VlcndNVjgtUF9mWFFfTlZTOG0xT2xlZU5wMVJpbDNieHlSQVZnNmZEemxteGQtaEtDbkRndzJ5MMIBAzM4MNIBANgBaeABnJPr3APoAZyT69wD8AEA%2BAHXBIACAogCAJIC%2BwIyNzgwNjQ4XzE2MTM4MjE4MzcsMjYxNzY3N18xNjEzODIxODM3LDI3OTg5MzRfMTYxMzgyMTg0MCwyNTExNDY2XzE2MTM4MjE4NDAsMjMxMDQ1NF8xNjEzODIxODQwLDI3MTIwMDFfMTYxMzgyMTg0MCwyNDkwNDA4XzE2MTM4MjE4NDAsMjMyNTUyMV8xNjEzODg0MzkzLDI2NTU1MTBfMTYxMzg4NDM5MywyMjk1NjIwXzE2MTM4ODQzOTMsMjMxMDQ1NF8xNjEzODg0MzkzLDIzOTA5MDBfMTYxMzg4NDM5MywyNTY4Njc1XzE2MTM4ODQ4NjcsMjUzNjg5MV8xNjEzODg0ODk2LDIzMjU1MjFfMTYxMzg4ODU5NiwyNDM4ODUxXzE2MTM4ODg1OTYsMjIxODI0MV8xNjEzODg4NTk2LDI3NzI4NTNfMTYxMzg4ODU5NiwyNTkwOTEyXzE2MTM4ODg1OTYsMjI4NDM5Ml8xNjEzODk5NzM0mAL7%2BTWgAqgNqAK3vBGwApAFuAIAwAKck%2BvcA8gCjQXqAgD4AqEliAMBkgMAqAMAsAMAuAMAyAMW0gM%2FeyIxIjoiODc0NjU1NTUiLCIyIjoiMzYwNjAyIiwiNCI6IjM4IiwiNSI6IjQ3IiwiNiI6IjI2NzFfNDc2OSJ94AMC6AMC8AMA%2BgMFb3RoZXKCBAludWxsOm51bGyIBNwEkAQAoAQaqgQECHcQBKoEBgjchX4QAQ%3D%3D%2Cf%7Cclick_sync_3%2Cg%7C1%2Ch%7C1%2Ci%7C500658499%2Cj%7C%2Ck%7C1613905726785%2Cl%7C%2Cm%7C1613905726266%2Cn%7C1%2Co%7C&ts=1613905726785"
+            target="_blank"><img style="height: 83px;width: 999px;" src="images主界面\广告2.jpg"></a>
+
+
+    </div>
+
+    <!-- 第九栏 番剧 -->
+    <div style="display: inline-block;position: relative;top: 740px;left: 12%;">
+        <a style="color: black;font-size: 20px;" href="https://www.bilibili.com/anime/" target="_blank"><img src="images主界面\番剧.png">番剧</a>
+
+    </div>
+
+    <!-- 第十栏 番剧动态 -->
+    <div style="display: inline-block;position: relative;top: 1100px;left: 12%;display: flex;justify-content: space-between;">
+        <div>
+            <a style="font-size: 20px;color: black;" href="https://www.bilibili.com/anime/" target="_blank">番剧动态</a>
+        </div>
+
+        <div style="position: absolute;right: 20%;">
+            <p style="font-size: 20px;">特别推荐</p><br>
+            <a href="https://www.bilibili.com/bangumi/play/ss36131" target="_blank"><img src="images主界面\特别推荐.png"></a>
+
+        </div>
+
+        <!-- 第十一栏 国创 -->
+        <div style="position: absolute;top:400px ;left: 1%;">
+            <a style="font-size: 20px;color: black;" href="https://www.bilibili.com/guochuang/?spm_id_from=333.851.b_62696c695f7265706f72745f67756f636875616e67.1"><img src="images主界面\国创.png">国创</a>
+
+
+
+        </div>
+
+        <!-- 第十二栏 国产原创相关 -->
+        <div style="position: absolute;top: 760px;left: 1%;">
+            <p style="color: black;font-size: 20px;">国产原创相关</p>
+
+
+
+        </div>
+
+        <!-- 第十三栏 广告3 -->
+        <div style="display: flex;justify-content: center;position: relative;top: 1150px;">
+            <a href="https://cm.bilibili.com/cm/api/fees/pc/sync/v2?msg=a%7C45%2Cb%7Cbilibili%2Cc%7C1%2Cd%7C1%2Ce%7CCMO2MhCKtpsBGOiV5SogoAYoATC%2FjwE4LUIgMTYxMzk1ODE3MzU2MXExNzJhMjVhMTU5YTc5cTc3MDVI%2Baadu%2FwuUgnmlIDmnp3oirFaBuWbm%2BW3nWIG5Lit5Zu9aAFwAXiAgICAkA2AAQOIAQCSAQ0xNzEuODkuODIuMTY5mgEAoAGgBqgBDLIBIJASiIPYQQdw%2FXft%2F129IBYGn3m9IRFcXXno%2B33b4vUTugGQAmh0dHA6Ly9tdnAuY2dkZXV2aXAuY29tL3lnL2JpbGliaWxpLzI1NDEvcGMvcWcvMDEtMzgvaW5kZXguaHRtbCMwMTE0LTE%2FdHJhY2tfaWQ9cHg3OENwMkRscVpiQlRNSFN2amxJRW5xZnFBTVhqdng1UjNOWjk4ell3aTBIUjkyNE0zdTFmVkhlOC0tMVJNYXB2b0RZVU40TGhkaG9oU3FBcll3cTRvanJKc3lyc3JWN0h4aEZmLUJ2QjZsMDB3YTdIakxSWUhORnA1VGl2Z0kwNmZPYTFJU0tvVVY5YXJWbDRJeHJ0cVVPbWpjd29lVGxxQXRzM3JWM2dVYlFfSHJjNWs4eXpHTkM3MUt0eDE5wgEDNDU10gEA2AFp4AGA6jDoAeDcKvABAPgBoAaAAgKIAgCSAvsCMjI5NTYyMF8xNjEzODg0MzkzLDIzMTA0NTRfMTYxMzg4NDM5MywyMzkwOTAwXzE2MTM4ODQzOTMsMjU2ODY3NV8xNjEzODg0ODY3LDI1MzY4OTFfMTYxMzg4NDg5NiwyMzI1NTIxXzE2MTM4ODg1OTYsMjQzODg1MV8xNjEzODg4NTk2LDIyMTgyNDFfMTYxMzg4ODU5NiwyNzcyODUzXzE2MTM4ODg1OTYsMjU5MDkxMl8xNjEzODg4NTk2LDIyODQzOTJfMTYxMzg5OTczNCwyNTQxNDEwXzE2MTM5MDU3MjUsMjU2MzY5NF8xNjEzOTA1NzI1LDIyOTU1NDRfMTYxMzkwNTcyNSwyMzA1OTIwXzE2MTM5MDU3MjUsMjU0NjQ0Ml8xNjEzOTA1NzI1LDIwMzM0MjFfMTYxMzkwNzQyMSwyMzMyMTc5XzE2MTM5MDg0OTQsMjMzMjE3OV8xNjEzOTEwOTEwLDI0MTI2MjVfMTYxMzkxMTAwNZgCzNm2AaACgDmoAo%2BIAbACIbgCAMAC0LsbyAKKDOoCAPgChx2IAwGSAwCoAwCwAwC4AwDIAxbSAz17IjEiOiI4OTczNzk2MCIsIjIiOiIxODM2NyIsIjQiOiIzOCIsIjUiOiI0NyIsIjYiOiI0ODZfMzcxOSJ94AMC6AMC8AMA%2BgMFb3RoZXKCBAludWxsOm51bGyIBKAGkAQAoAQaqgQECHcQBKoEBgiNwysQAQ%3D%3D%2Cf%7Cclick_sync_3%2Cg%7C1%2Ch%7C1%2Ci%7C500658499%2Cj%7C%2Ck%7C1613958177463%2Cl%7C%2Cm%7C1613958176624%2Cn%7C1%2Co%7C&ts=1613958177463"><img style="height: 83px;width: 999px;" src="images主界面\广告3.png"></a>
+        </div>
+
+        <!-- 第十四栏 漫画 -->
+        <div>
+
+
+
+        </div>
+
+
+
+
+</body>
+
+</html>
